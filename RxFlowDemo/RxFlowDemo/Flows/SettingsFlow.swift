@@ -15,10 +15,10 @@ class SettingsFlow: Flow {
         return self.rootViewController
     }
 
-    let rootViewController = UISplitViewController()
+    private let rootViewController = UISplitViewController()
+    private let settingsStepper: SettingsStepper
 
-    let settingsStepper: SettingsStepper
-    init(withService service: MoviesService, andStepper stepper: SettingsStepper) {
+    init(withServices services: AppServices, andStepper stepper: SettingsStepper) {
         self.settingsStepper = stepper
     }
 

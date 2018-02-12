@@ -16,11 +16,11 @@ class AppFlow: Flow {
     }
 
     private let rootWindow: UIWindow
-    private let service: MoviesService
+    private let services: AppServices
 
-    init(withWindow window: UIWindow, andService service: MoviesService) {
+    init(withWindow window: UIWindow, andServices services: AppServices) {
         self.rootWindow = window
-        self.service = service
+        self.services = services
     }
 
     func navigate(to step: Step) -> NextFlowItems {
@@ -46,8 +46,8 @@ class AppFlow: Flow {
     private func navigationToDashboardScreen () -> NextFlowItems {
         let tabbarController = UITabBarController()
         let wishlistStepper = WishlistStepper()
-        let wishListFlow = WishlistFlow(withService: self.service, andStepper: wishlistStepper)
-        let watchedFlow = WatchedFlow(withService: self.service)
+        let wishListFlow = WishlistFlow(withServices: self.services, andStepper: wishlistStepper)
+        let watchedFlow = WatchedFlow(withServices: self.services)
 
         Flows.whenReady(flow1: wishListFlow, flow2: watchedFlow, block: { [unowned self] (root1: UINavigationController, root2: UINavigationController) in
             let tabBarItem1 = UITabBarItem(title: "Wishlist", image: UIImage(named: "wishlist"), selectedImage: nil)

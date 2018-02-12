@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1A25DE81202D3CFE00F1C4B8 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25DE80202D3CFE00F1C4B8 /* AppFlow.swift */; };
+		1A25DE83202FB62500F1C4B8 /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25DE82202FB62500F1C4B8 /* PreferencesService.swift */; };
+		1A25DE85203129F200F1C4B8 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A25DE84203129F200F1C4B8 /* OnboardingFlow.swift */; };
 		1A8FBE101FF845EE00389464 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8FBE0D1FF845EE00389464 /* Reusable.framework */; };
 		1A8FBE111FF845EE00389464 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8FBE0E1FF845EE00389464 /* RxSwift.framework */; };
 		1A8FBE121FF845EE00389464 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8FBE0F1FF845EE00389464 /* RxCocoa.framework */; };
 		1A8FBE261FF8480C00389464 /* WishlistFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE211FF8480B00389464 /* WishlistFlow.swift */; };
 		1A8FBE271FF8480C00389464 /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE221FF8480C00389464 /* DemoStep.swift */; };
 		1A8FBE281FF8480C00389464 /* SettingsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE231FF8480C00389464 /* SettingsFlow.swift */; };
-		1A8FBE291FF8480C00389464 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE241FF8480C00389464 /* MainFlow.swift */; };
 		1A8FBE2A1FF8480C00389464 /* WatchedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE251FF8480C00389464 /* WatchedFlow.swift */; };
 		1A8FBE2D1FF84B2500389464 /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE2C1FF84B2500389464 /* ViewModelBased.swift */; };
 		1A8FBE341FF84B5300389464 /* CastsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8FBE2F1FF84B5300389464 /* CastsHelper.swift */; };
@@ -69,13 +70,14 @@
 
 /* Begin PBXFileReference section */
 		1A25DE80202D3CFE00F1C4B8 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		1A25DE82202FB62500F1C4B8 /* PreferencesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesService.swift; sourceTree = "<group>"; };
+		1A25DE84203129F200F1C4B8 /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		1A8FBE0D1FF845EE00389464 /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
 		1A8FBE0E1FF845EE00389464 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		1A8FBE0F1FF845EE00389464 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1A8FBE211FF8480B00389464 /* WishlistFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistFlow.swift; sourceTree = "<group>"; };
 		1A8FBE221FF8480C00389464 /* DemoStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoStep.swift; sourceTree = "<group>"; };
 		1A8FBE231FF8480C00389464 /* SettingsFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFlow.swift; sourceTree = "<group>"; };
-		1A8FBE241FF8480C00389464 /* MainFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		1A8FBE251FF8480C00389464 /* WatchedFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFlow.swift; sourceTree = "<group>"; };
 		1A8FBE2C1FF84B2500389464 /* ViewModelBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
 		1A8FBE2F1FF84B5300389464 /* CastsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastsHelper.swift; sourceTree = "<group>"; };
@@ -145,10 +147,10 @@
 			children = (
 				1A8FBE221FF8480C00389464 /* DemoStep.swift */,
 				1A25DE80202D3CFE00F1C4B8 /* AppFlow.swift */,
-				1A8FBE241FF8480C00389464 /* MainFlow.swift */,
-				1A8FBE231FF8480C00389464 /* SettingsFlow.swift */,
+				1A25DE84203129F200F1C4B8 /* OnboardingFlow.swift */,
 				1A8FBE251FF8480C00389464 /* WatchedFlow.swift */,
 				1A8FBE211FF8480B00389464 /* WishlistFlow.swift */,
+				1A8FBE231FF8480C00389464 /* SettingsFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -161,6 +163,7 @@
 				1A8FBE301FF84B5300389464 /* MoviesHelper.swift */,
 				1A8FBE311FF84B5300389464 /* MoviesRepository.swift */,
 				1A8FBE331FF84B5300389464 /* MoviesService.swift */,
+				1A25DE82202FB62500F1C4B8 /* PreferencesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -416,7 +419,6 @@
 				1A8FBE481FF84BB200389464 /* SettingsListViewController.swift in Sources */,
 				1A8FBE5E1FF84BFE00389464 /* WishlistViewModel.swift in Sources */,
 				1A8FBE631FF84BFE00389464 /* CastDetailViewModel.swift in Sources */,
-				1A8FBE291FF8480C00389464 /* MainFlow.swift in Sources */,
 				1A8FBE611FF84BFE00389464 /* MovieDetailViewController.swift in Sources */,
 				1A8FBE3D1FF84B7E00389464 /* Cast.swift in Sources */,
 				1A8FBE621FF84BFE00389464 /* MovieDetailViewModel.swift in Sources */,
@@ -433,7 +435,9 @@
 				1A8FBE361FF84B5300389464 /* MoviesRepository.swift in Sources */,
 				1A8FBE681FF84BFE00389464 /* WishlistViewController.swift in Sources */,
 				1A8FBE3C1FF84B7E00389464 /* Movie.swift in Sources */,
+				1A25DE85203129F200F1C4B8 /* OnboardingFlow.swift in Sources */,
 				1A8FBE4C1FF84BB200389464 /* SettingsViewController.swift in Sources */,
+				1A25DE83202FB62500F1C4B8 /* PreferencesService.swift in Sources */,
 				1A8FBE371FF84B5300389464 /* CastsRepository.swift in Sources */,
 				1A8FBE261FF8480C00389464 /* WishlistFlow.swift in Sources */,
 				1A8FBE2D1FF84B2500389464 /* ViewModelBased.swift in Sources */,
